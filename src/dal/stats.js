@@ -62,10 +62,10 @@ export const getTrafficSourceDal = (tenantId, userDid) => {
           sourcesCount.forEach((source) => {
             result.push({
               reason: source.reason,
-              percentAccess: (
+              percentAccess: 
                 (source.count.toFixed(2) / total.toFixed(2)) *
                 100
-              ).toFixed(2),
+              ,
             });
           });
 
